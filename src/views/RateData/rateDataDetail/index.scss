@@ -1,0 +1,25 @@
+.rateDataDetail{
+  .rateDataDetail_item_center{
+    align-items: center;
+  }
+  .rateDataDetail_item{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: .1rem .2rem;
+    .rateDataDetail_label{
+      width: .8rem;
+      text-align: right;
+    }
+    .tenderDatail_value{
+      width: 3rem;
+      textarea{
+        height: 1rem;
+      }
+    }
+    .rateDataDetail_txt{
+      color: #38f;
+      cursor: pointer;
+    }
+  }
+}

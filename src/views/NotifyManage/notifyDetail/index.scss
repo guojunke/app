@@ -1,0 +1,26 @@
+.notifyDetai{
+  .notifyDetai_item_center{
+    align-items: center;
+  }
+  .notifyDetai_item{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: 10px 20px;
+    min-height: .2rem;
+    .notifyDetai_label{
+      width: 1rem!important;
+      text-align: right;
+    }
+    .tenderDatail_value{
+      width: 3rem;
+    }
+    .notifyDetai_txt{
+      color: #38f;
+      cursor: pointer;
+    }
+    .notifyDetai_item_image{
+      width: 50%;
+    }
+  }
+}

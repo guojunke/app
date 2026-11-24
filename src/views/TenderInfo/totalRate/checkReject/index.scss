@@ -1,0 +1,25 @@
+.checkReject{
+  .checkReject_item_center{
+    align-items: center;
+  }
+  .checkReject_item{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: .1rem .2rem;
+    .checkReject_label{
+      width: .8rem;
+      text-align: right;
+    }
+    .checkReject_value{
+      width: 3rem;
+      textarea{
+        height: 1rem;
+      }
+    }
+    .checkReject_txt{
+      color: #38f;
+      cursor: pointer;
+    }
+  }
+}

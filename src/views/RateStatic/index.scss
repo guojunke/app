@@ -1,0 +1,119 @@
+.rateStatic{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0rem .1rem;
+  background: #f6f6f6;
+  .rateStatic_serach{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .1rem 0rem;
+    .rateStatic_serach_item{
+      margin-bottom: .1rem;
+      margin-right: .2rem;
+    }
+  }
+
+  .rateStatic_table_left {
+    display: flex;
+    flex-wrap: wrap;
+    // width: 3.6rem;
+    width: 3.6rem;
+    min-height: 4.1rem;
+    border: 1px solid #ddd;
+    flex: 1;
+    overflow: auto;
+    box-sizing: border-box;
+    .rateStatic_single_image{
+      width: 100%;
+    }
+    .rateStatic_image_box{
+      width: 1.6rem;
+    }
+  }
+  
+  .rateStatic_box{
+    width: 3.6rem;
+    // width: 100%;
+    height: 4.1rem;
+  }
+
+  .rateStatic_table{
+    display: flex;
+    flex: 1;
+    padding: .1rem 0;
+    overflow: auto;
+    .rateStatic_table_right{
+      flex: 1;
+      width: 1rem;
+      padding: 0 .2rem;
+      overflow: auto;
+      .rateStatic_tag{
+        span{
+          display: inline-block;
+          padding: .04rem .06rem;
+          margin: .06rem;
+          border: 1px solid #ccc;
+          border-radius: .08rem;
+        }
+        .rateStatic_tag_active{
+          background: #0364FF;
+          color: #fff;
+        }
+      }
+    }
+    thead th{
+      // color: #fff;
+      background: #E5EFFF;
+    }
+  }
+  .rateStatic_rateContainer_box{
+    width: .08rem;
+    flex: 1;
+    text-align: left;
+  }
+  .rateStatic_rateContainer{
+    display: flex;
+    width: 100%;
+    height: .14rem;
+    line-height: .14rem;
+    margin-right: .06rem;
+    text-align: left;
+    background: #eee;
+    border-radius: .1rem;
+    overflow: hidden;
+    .rateStatic_rateContainer_span{
+      display: inline-block;
+      height: .14rem;
+      text-align: center;
+      color: #fff;
+      font-size: .1rem;
+      border-radius: .1rem 0 0 .1rem;
+      // background: #9A8CFF;
+      background: #76E18D;
+    }
+    .rateStatic_rateContainer_red{
+      display: inline-block;
+      height: .14rem;
+      text-align: center;
+      color: #fff;
+      font-size: .1rem;
+      border-radius: 0 .1rem .1rem 0;
+      background: red;
+    }
+  }
+  
+  .rateStatic_rateContainer_1{
+    color: #9A8CFF;
+    margin-right: .1rem;
+    opacity: 0;
+  }
+  .rateStatic_rateContainer_2{
+    color: red;
+  }
+  
+  .image{
+    width: 100%;
+    margin: .06rem;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=0.5, maximum-scale=2">
+    <title>智慧高标</title>
+    <script type="text/javascript" src="//webapi.amap.com/maps?v=1.4.15&key=4295da4a497165507e8ef420988ffe10"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <script>
+      var mapObj = new AMap.Map('app');
+      mapObj.plugin('AMap.Geolocation', function () {
+        geolocation = new AMap.Geolocation({
+          enableHighAccuracy: true, // 是否使用高精度定位，默认:true
+          timeout: 10000, // 超过10秒后停止定位，默认：无穷大
+          maximumAge: 0, // 定位结果缓存0毫秒，默认：0
+          convert: true, // 自动偏移坐标，偏移后的坐标为高德坐标，默认：true
+          showButton: true, // 显示定位按钮，默认：true
+          buttonPosition: 'LB', // 定位按钮停靠位置，默认：'LB'，左下角
+          buttonOffset: new AMap.Pixel(10, 20), // 定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
+          showMarker: true, // 定位成功后在定位到的位置显示点标记，默认：true
+          showCircle: true, // 定位成功后用圆圈表示定位精度范围，默认：true
+          panToLocation: true, // 定位成功后将定位到的位置作为地图中心点，默认：true
+          zoomToAccuracy:true // 定位成功后调整地图视野范围使定位位置及精度范围视野内可见，默认：false
+        });
+        mapObj.addControl(geolocation);
+        geolocation.getCurrentPosition();
+        AMap.event.addListener(geolocation, 'complete', onComplete); // 返回定位信息
+        AMap.event.addListener(geolocation, 'error', onError); // 返回定位出错信息
+      });
+
+      function onComplete(obj){
+        window.$positionDimen = obj.position.R;
+        window.$positionLong = obj.position.Q;
+      }
+
+      function onError(obj) {
+        alert(obj.info + '--' + obj.message);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="initLoad" style="z-index: 9999; position: fixed;top: 0; left: 0; width: 100%; height: 100%;display: flex; flex-direction: column;justify-content: center;
+     align-items: center;font-size: 18px; color: #fff;background: url('./logoBg.jpg') no-repeat center/100%;">
+      <p style="width: 50px;height: 50px; margin-bottom: 30px; background: url('./load.gif') no-repeat center/100%"></p>
+      正在加载中...
+    </div>
+    <div id="app"></div>
+  </body>
+
+  <script>
+    window.onload = function () {
+      document.getElementById('initLoad').style.display = 'none';
+    };
+  </script>
+  
+</html>

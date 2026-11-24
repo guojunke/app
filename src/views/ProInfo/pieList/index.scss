@@ -1,0 +1,36 @@
+.pieList{
+  .pieList_header{
+    display: flex;
+    align-items: center;
+    padding: .1rem;
+    h4 span{
+        display: inline-block;
+        width: .1rem;
+        height: .1rem;
+        margin: 0 .1rem;
+        background: #38f;
+        border-radius: 50%;
+    }
+  }
+
+  .pieList_box{
+    display: flex;
+    flex-wrap: wrap;
+    h4{
+      text-align: center;
+    }
+  }
+  .pieList_box_container{
+    
+    padding: .04rem;
+    margin-right: .1rem;
+    margin-bottom: .16rem;
+    border: 1px solid #ccc;
+  }
+  .pieList_box_item{
+    width: 4.0rem;
+    // width: 2.8rem;
+    min-height: 2rem;
+    
+  }
+}

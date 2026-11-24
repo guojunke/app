@@ -1,0 +1,30 @@
+.tenderManage{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: .1rem;
+  background: #fff;
+  box-sizing: border-box;
+  .tenderManage_serach{
+    display: flex;
+    flex-wrap: wrap;
+    .tenderManage_serach_item{
+      margin-bottom: .1rem;
+      margin-right: .2rem;
+    }
+  }
+  .tenderManage_table{
+    min-height: 1.8rem;
+    flex: 1;
+    padding: .1rem 0;
+    overflow: auto;
+    thead th{
+      // color: #fff;
+      background: #E5EFFF;
+    }
+  }
+  .tenderManage_page{
+    padding: .1rem .3rem;
+    text-align: right;
+  }
+}

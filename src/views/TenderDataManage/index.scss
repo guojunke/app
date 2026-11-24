@@ -1,0 +1,23 @@
+.tenderDataManage{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .tenderDataManage_serach{
+    display: flex;
+    flex-wrap: wrap;
+    .tenderDataManage_serach_item{
+      margin-bottom: .1rem;
+      margin-right: .2rem;
+    }
+  }
+  .tenderDataManage_table{
+    min-height: 1.8rem;
+    flex: 1;
+    padding: .1rem 0;
+    overflow: auto;
+  }
+  .tenderDataManage_page{
+    padding: .1rem .3rem;
+    text-align: right;
+  }
+}

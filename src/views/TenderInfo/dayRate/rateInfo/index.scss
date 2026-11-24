@@ -1,0 +1,22 @@
+.rateInfo{
+  .rateInfo_item_center{
+    align-items: center;
+  }
+  .rateInfo_item{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: .1rem .2rem;
+    .rateInfo_label{
+      width: .9rem;
+      text-align: right;
+    }
+    .tenderDatail_value{
+      width: 3rem;
+    }
+    .rateInfo_txt{
+      color: #38f;
+      cursor: pointer;
+    }
+  }
+}

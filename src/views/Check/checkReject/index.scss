@@ -1,0 +1,43 @@
+.checkReject{
+  .checkReject_item_center{
+    align-items: center;
+  }
+  .checkReject_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: center;
+    padding: .1rem .2rem;
+    .checkReject_label{
+      width: .8rem;
+      line-height: .36rem;
+      text-align: right;
+    }
+    .checkReject_value{
+      width: 3rem;
+      textarea{
+        height: 1rem;
+      }
+      img{
+        width: 60%;
+      }
+    }
+    .checkReject_txt{
+      color: #38f;
+      cursor: pointer;
+    }
+  }
+  .checkReject_span{
+    display: flex;
+    align-items: center;
+    margin-left: 0.26rem;
+    line-height: .36rem;
+    width: 4.2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .checkReject_span_look{
+    margin-left: 1.26rem;
+  }
+}

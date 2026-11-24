@@ -1,0 +1,58 @@
+.totalRate{
+    .totalRate_header{
+        display: flex;
+        align-items: center;
+        padding: .1rem;
+        span{
+            display: inline-block;
+            width: .1rem;
+            height: .1rem;
+            margin: 0 .1rem;
+            background: #38f;
+            border-radius: 50%;
+        }
+    }
+
+    .totalRate_table{
+        width: 100%;
+        overflow: auto;
+        border-top: 1px solid #ddd;
+    }
+    .totalRate_row{
+        display: flex;
+        min-width: 15rem;
+        border-left: 1px solid #ddd;
+        li{
+            // flex: 1;
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            // &:nth-of-type(12) {
+            //     width: 1.62rem!important;
+            //     padding: 0 0.02rem;
+            // }
+        }
+        .totalRate_line{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            // border-bottom: 1px solid #ddd;
+            p{
+                // height: .2rem;
+                line-height: .16rem!important;
+                // padding: .06rem;
+                // white-space: nowrap;
+                font-size: .14rem;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                // max-height: .54rem;
+
+                border-bottom: 1px solid #ddd;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+            }
+        }
+    }
+}

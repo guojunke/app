@@ -1,0 +1,39 @@
+.notifyList{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .notifyList_serach{
+    display: flex;
+    flex-wrap: wrap;
+    .notifyList_serach_item{
+      margin-bottom: .1rem;
+      margin-right: .2rem;
+    }
+  }
+  .notifyList_table{
+    min-height: 2.8rem;
+    flex: 1;
+    padding: .1rem 0;
+    overflow: auto;
+    thead th{
+      // color: #fff;
+      background: #E5EFFF;
+    }
+  }
+  .notifyList_page{
+    padding: .1rem .2rem;
+    text-align: right;
+  }
+  .notifuManage_color_1{
+    color: #683100;
+  }
+  .notifuManage_color_2{
+    color: #00B83D;
+  }
+  .notifuManage_color_3{
+    color: #683100;
+  }
+  .notifuManage_color_4{
+    color: #CC66FF;
+  }
+}

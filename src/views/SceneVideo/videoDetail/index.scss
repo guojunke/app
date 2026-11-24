@@ -1,0 +1,29 @@
+.videoDetail{
+  .videoDetail_item_center{
+    align-items: center;
+  }
+  .videoDetail_item{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: .1rem .2rem;
+    .videoDetail_label{
+      width: .6rem;
+      text-align: right;
+    }
+    .tenderDatail_value{
+      width: 3rem;
+      textarea{
+        height: 1rem;
+      }
+      img{
+        width: 1rem;
+        margin: 0 0.06rem 0.06rem 0;
+      }
+    }
+    .videoDetail_txt{
+      color: #38f;
+      cursor: pointer;
+    }
+  }
+}

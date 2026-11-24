@@ -1,0 +1,95 @@
+.tenderManage{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    height: 100%;
+    padding: .3rem 0 0;
+    background: #fff;
+    overflow: auto;
+    .tenderManage_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tenderManage_box_item{
+        padding: .06rem .1rem;
+        border: 1px solid #aaa;
+        border-radius: .06rem;
+    }
+    .tenderManage_box_line{
+        height: .3rem;
+        border-left: 1px solid #aaa;
+    }
+    .tenderManage_row_line{
+        // width: 58%;
+        border-bottom: 1px solid #aaa;
+    }
+    .tenderManage_container{
+        display: flex;
+        // flex-wrap: wrap;
+    }
+    .tenderManage_item_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: .1rem;
+
+        // margin: 0 .1rem .1rem;
+        .tenderManage_item_line{
+            height: .3rem;
+            border-left: 1px solid #aaa;
+        }
+        .tenderManage_item_tender{
+            padding: .06rem .1rem;
+            border: 1px solid #aaa;
+            border-radius: .06rem;
+        }
+        .tenderManage_type_box{
+            display: flex;
+            flex-wrap: wrap;
+            // min-width: 2.3rem;
+            width: 2.8rem;
+            min-height: .5rem;
+            padding: .06rem .1rem;
+            margin: 0 .06rem;
+            border: 1px dotted #aaa;
+            // overflow: hidden;
+            .tenderManage_item_type{
+                // float: left;
+                // padding: .06rem .1rem;
+                border: 1px solid #aaa;
+                margin: .06rem;
+            }
+        }
+
+        // &:nth-of-type(3n+1){
+        //     .tenderManage_item_top{
+        //         margin-left: 100%;
+        //     }
+            
+        // }
+        // &:nth-of-type(3n){
+        //     .tenderManage_item_top{
+        //         margin-right: 100%;
+        //     }
+            
+        // }
+        &:first-child{
+            .tenderManage_item_top{
+                margin-left: 100%;
+            }
+            
+        }
+        &:last-child{
+            .tenderManage_item_top{
+                margin-right: 100%;
+            }
+            
+        }
+    }
+    .tenderManage_disabled{
+        color: #c1c1c1;
+        // background: #f9f9f9;
+    }
+}

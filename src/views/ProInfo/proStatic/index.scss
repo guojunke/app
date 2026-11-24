@@ -1,0 +1,73 @@
+.proStatic{
+  padding-top: .1rem;
+  .proStatic_header{
+    display: flex;
+    align-items: center;
+    padding: .1rem;
+    h4 span{
+        display: inline-block;
+        width: .1rem;
+        height: .1rem;
+        margin: 0 .1rem;
+        background: #38f;
+        border-radius: 50%;
+    }
+  }
+
+  .proStatic_table{
+    margin: 0 .2rem;
+    overflow: auto;
+    border-top: 1px solid #ccc;
+    ul{
+      display: flex;
+      width: 12rem;
+      border-left: 1px solid #ddd;
+      li{
+        display: flex;
+        flex-direction: column;
+      }
+      .proStatic_table_th{
+        color: #333;
+        font-weight: bolder;
+      }
+      .proStatic_table_cell_other{
+        display: flex;
+        justify-content: center;
+        // flex: 1;
+        min-height: .36rem;
+        line-height: .36rem;
+        text-align: center;
+        align-items: center;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ccc;
+        word-break: break-all;
+      }
+      .proStatic_table_cell{
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        min-height: .54rem;
+        line-height: .18rem;
+
+        font-size: 0.14rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        // max-height: .54rem;
+
+        text-align: center;
+        align-items: center;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ccc;
+        word-break: break-all;
+      }
+      .proStatic_table_flex{
+        flex: 1;
+      }
+    }
+  }
+
+  .proStatic_color_blue{
+    color: #38f;
+    cursor: pointer;
+  }
+}

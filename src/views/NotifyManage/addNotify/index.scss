@@ -1,0 +1,32 @@
+.addNotify{
+  .addNotify_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: .1rem .2rem;
+    .addNotify_label{
+      width: .8rem;
+      text-align: right;
+    }
+    .addNotify_span{
+      display: flex;
+      align-items: center;
+      margin-left: 1.5rem;
+      line-height: .36rem;
+      width: 4.2rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    textarea{
+      height: .8rem;
+    }
+  }
+  .addNotify_textarea{
+    align-items: flex-start ;
+    .addNotify_label{
+      line-height: .36rem;;
+    }
+  }
+}

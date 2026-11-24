@@ -1,0 +1,23 @@
+.addRate{
+  .addRate_item_center{
+    align-items: center;
+  }
+  .addRate_item{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: .1rem .2rem;
+    .addRate_label{
+      width: .9rem;
+      text-align: right;
+    }
+    .addRate_value{
+      width: 2.4rem;
+      margin-right: .1rem;
+    }
+    .addRate_txt{
+      color: #38f;
+      cursor: pointer;
+    }
+  }
+}

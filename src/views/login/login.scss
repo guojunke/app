@@ -1,0 +1,73 @@
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: url('./../../../static/image/logoBg.jpg') no-repeat center/100% 100%;
+  .login_box{
+    width: 5.97rem;
+    height: 4.56rem;
+    background: #fff;
+    border-radius: .2rem .2rem 0 0;
+    box-shadow:0px 0px 30px 0px rgba(6,82,204,0.34);
+    .login_title{
+      height: 1.23rem;
+      line-height: 1.23rem;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: .50rem;
+      font-weight: bolder;
+      background: #0364FF;
+      color: #fff;
+      border-radius: .2rem .2rem 0 0;
+    }
+    .login_box_item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .1rem 0 .2rem;
+      .login_box_span{
+        display: inline-block;
+        width: .6rem;
+        text-align: right;
+        color: #5E7EB1;
+      }
+      .ivu-input-large{
+        border-radius: .25rem;
+        background: rgba(70,123,206,0.3);
+        color: #5E7EB1;
+        padding-left: .25rem;
+      }
+      .login_box_btn{
+        width: 3.2rem;
+        background: #0364FF;
+        color: #fff;
+        border-radius: .2rem;
+        margin-left: .72rem;
+      }
+
+      .login_select{
+        width: 1.51rem;
+        padding: .02rem .25rem;
+        background: #0364FF;
+        border-radius: .25rem;
+        margin-right: .16rem;
+        .ivu-select-large.ivu-select-single .ivu-select-selection{
+          background: #0364FF;
+          border: 0!important;
+          color: #fff;
+          .ivu-icon-ios-arrow-down:before{
+            color: #fff;
+          }
+        }
+      }
+    }
+    .login_fail{
+      color: red;
+      font-size: .16rem;
+      padding-left: 1.69rem;
+      // text-align: center;
+    }
+  }
+}

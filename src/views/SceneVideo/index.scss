@@ -1,0 +1,24 @@
+.scenceVideo{
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+  height: 99%;
+  margin: 0.1rem auto;
+  padding: .05rem;
+  font-size: .16rem;
+  box-sizing: border-box;
+  background: #fff;
+  .scenceVideo_table{
+    flex: 1;
+    overflow: auto;
+    padding: .1rem;
+    thead th{
+      // color: #fff;
+      background: #E5EFFF;
+    }
+    .scenceVideo_page{
+      padding: .2rem;
+      text-align: right;
+    }
+  }
+}

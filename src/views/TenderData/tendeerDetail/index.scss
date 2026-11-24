@@ -1,0 +1,22 @@
+.tenderDetail{
+  .tenderDetail_item_center{
+    align-items: center;
+  }
+  .tenderDetail_item{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: .1rem .2rem;
+    .tenderDetail_label{
+      width: .6rem;
+      text-align: right;
+    }
+    .tenderDatail_value{
+      width: 3rem;
+    }
+    .tenderDetail_txt{
+      color: #38f;
+      cursor: pointer;
+    }
+  }
+}
